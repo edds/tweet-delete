@@ -1,0 +1,21 @@
+service: tweet-deleter
+custom: ${file(./config.yml)}
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-west-1
+  environment:
+    CONSUMER_KEY: ${self:custom.CONSUMER_KEY}
+    CONSUMER_SECRET: ${self:custom.CONSUMER_SECRET}
+    ACCESS_TOKEN_KEY: ${self:custom.ACCESS_TOKEN_KEY}
+    ACCESS_TOKEN_SECRET: ${self:custom.ACCESS_TOKEN_SECRET}
+    USERNAME: ${self:custom.USERNAME}
+    MAX_DAYS_AGO: ${self:custom.MAX_DAYS_AGO}
+    KEEP: ${self:custom.KEEP}
+
+functions:
+  deleteTweets:
+    handler: handler.main
+    events:
+      - schedule: rate(24 hours)

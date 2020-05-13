@@ -1,0 +1,16 @@
+{
+  "name": "tweet-delete",
+  "version": "1.0.0",
+  "description": "Delete old tweets via a lambda",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "serverless deploy",
+    "remove": "serverless remove"
+  },
+  "author": "Edd Sowden",
+  "license": "MIT",
+  "dependencies": {
+    "serverless": "^1.70.1",
+    "twitter-lite": "^0.11.0"
+  }
+}

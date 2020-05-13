@@ -1,0 +1,7 @@
+CONSUMER_KEY: "xxxx"
+CONSUMER_SECRET: "xxx"
+ACCESS_TOKEN_KEY: "xxx"
+ACCESS_TOKEN_SECRET: "xxx"
+USERNAME: "xxx"
+MAX_DAYS_AGO: "30" # days of tweets to keep
+KEEP: "" # comma separated ids of tweets to keep forever
