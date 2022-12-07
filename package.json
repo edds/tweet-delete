@@ -10,7 +10,7 @@
   "author": "Edd Sowden",
   "license": "MIT",
   "dependencies": {
-    "serverless": "^1.70.1",
+    "serverless": "^3.25.1",
     "twitter-lite": "^0.11.0"
   }
 }
